@@ -1,0 +1,106 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+html{
+  font-size:62.5%;
+}
+
+body{
+  background-color: hsl(0, 0%, 95%);
+  font-size:1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1{
+  font-family:"Big Shoulders Display", sans-serif;
+  color:hsl(0, 0%, 95%);
+  text-transform: uppercase;
+}
+
+.wrapper{
+  display: flex;
+  width:80%;
+  max-width:850px;
+  margin:0 auto;
+  padding:100px 0;
+  color:hsla(0, 0%, 100%, 0.75);
+}
+
+.item1{
+  background-color: hsl(31, 77%, 52%);
+  padding:2em 4.8em 3em 2em;
+}
+
+.item2{
+  background-color:hsl(184, 100%, 22%);
+  padding:2em 5em 3em 2em;
+}
+
+.item3{
+  background-color:hsl(179, 100%, 13%);
+  padding:2em 5em 3em 2em;
+}
+
+.item1 p{
+  font-size:1.2rem;
+  line-height: 1.7;
+  margin-bottom:7.2rem
+}
+.item2 p,
+.item3 p{
+  margin-bottom:7rem;
+  font-size:1.2rem;
+  line-height: 1.7;
+}
+
+.btn{
+  text-decoration: none;
+  border-radius:100px;
+  background-color:hsl(0, 0%, 95%);
+  padding:.75em 2em;
+  display: inline-block;
+}
+
+.item1 .btn{
+  color:hsl(31, 77%, 52%);
+}
+
+.item2 .btn{
+  color:hsl(184, 100%, 22%);
+}
+
+.item3 .btn{
+  color:hsl(179, 100%, 13%);
+}
+
+.btn:hover,
+.btn:focus{
+  opacity: .75;
+}
+
+
+
+@media screen and (max-width:376px){
+  .wrapper{
+    flex-flow: column nowrap;
+  }
+
+  .item1,
+  .item2,
+  .item3{
+    padding:2em 4em 2em 2em;
+  }
+
+  .item1 p,
+  .item2 p,
+  .item3 p{
+      margin-bottom:2rem;
+  }
+  .btn{
+    font-size:1.2rem;
+    padding:1em 2em;
+  }
+
+
+}
